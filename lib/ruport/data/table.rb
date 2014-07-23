@@ -1059,4 +1059,10 @@ module Ruport
        Ruport::Data::Table.new(:data => [], :column_names => args,&block)
     end
   end
+
+  module Data
+    def self.Table(*args,&block)
+      Ruport.Table(*args,&block)
+    end
+  end
 end
